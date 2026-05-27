@@ -1,0 +1,6 @@
+{
+  "name": "ResumeAI Pro",
+  "description": "An advanced AI-powered ATS resume analyzer with an animated global login network.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
