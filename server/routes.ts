@@ -180,7 +180,7 @@ apiRouter.get('/v1/auth/linkedin/sandbox', (req: Request, res: Response) => {
       </style>
     </head>
     <body class="bg-[#0b0f19] text-slate-100 min-h-screen flex items-center justify-center p-4">
-      <div id="loading" class="hidden fixed inset-0 bg-[#060a14]/90 z-50 flex flex-col items-center justify-center">
+     <div id="loading" class="hidden fixed inset-0 bg-[#060a14]/90 z-50 flex-col items-center justify-center">
         <div class="w-12 h-12 rounded-full border-2 border-[#0077b5] border-t-transparent animate-spin mb-4"></div>
         <p class="font-mono text-xs text-[#0077b5] uppercase tracking-widest font-bold">EXCHANGING HANDSHAKE CREDENTIALS...</p>
         <p class="text-[10px] text-slate-500 mt-1">Establishing secure telemetry tunnel</p>
@@ -225,7 +225,7 @@ apiRouter.get('/v1/auth/linkedin/sandbox', (req: Request, res: Response) => {
               <!-- Presets option 1 -->
               <div class="cursor-pointer border border-[#0077b5] bg-[#0077b5]/10 rounded-lg p-3 flex items-start gap-3 transition-all relative" id="label-preset1">
                 <input type="radio" id="preset_eng" name="presetSelector" value="engineer" checked class="mt-1 accent-[#0077b5]" onclick="selectPreset('engineer')">
-                <label for="preset_eng" class="cursor-pointer flex-grow">
+                <label for="preset_eng" class="cursor-pointer grow">
                   <span class="text-xs font-bold text-white block">Devin Mercer 🇬🇧</span>
                   <span class="text-[10px] text-slate-400 block mt-0.5">Staff Full-Stack Engineer</span>
                   <span class="text-[9px] font-mono text-[#0077b5] uppercase tracking-tighter block mt-1">TypeScript • React • Node • Redis</span>
@@ -235,7 +235,7 @@ apiRouter.get('/v1/auth/linkedin/sandbox', (req: Request, res: Response) => {
               <!-- Presets option 2 -->
               <div class="cursor-pointer border border-slate-800 hover:border-[#0077b5] rounded-lg p-3 flex items-start gap-3 transition-all relative" id="label-preset2">
                 <input type="radio" id="preset_pm" name="presetSelector" value="pm" class="mt-1 accent-[#0077b5]" onclick="selectPreset('pm')">
-                <label for="preset_pm" class="cursor-pointer flex-grow">
+                <label for="preset_pm" class="cursor-pointer grow">
                   <span class="text-xs font-bold text-white block">Elena Vance 🇺🇸</span>
                   <span class="text-[10px] text-slate-400 block mt-0.5">Lead Product Manager</span>
                   <span class="text-[9px] font-mono text-amber-550 uppercase tracking-tighter block mt-1 font-bold">Product Strategy • ML Dashboards</span>

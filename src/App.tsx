@@ -600,7 +600,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
 
         {/* NAVIGATION TABS */}
         <div className={`px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider select-none ${t.textMuted}`}>System Monitor</div>
-        <nav className="flex-grow flex flex-col gap-1.5 overflow-y-auto">
+        <nav className="grow flex flex-col gap-1.5 overflow-y-auto">
           <button 
             onClick={() => setActiveTab('dashboard')}
             className={`flex items-center gap-3 px-4 py-2 rounded-sm transition-all text-left font-sans text-sm w-full ${activeTab === 'dashboard' ? t.navActive : t.navInactive}`}
@@ -673,7 +673,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
         {/* BOTTOM UTILITY LINKS */}
         <div className={`mt-auto pt-3 border-t ${t.borderClass} flex flex-col gap-1.5 shrink-0`}>
           <div className={`p-2.5 rounded-sm mb-xs relative overflow-hidden ${t.cardClass}`}>
-            <h4 className={`font-mono text-[9px] font-bold uppercase mb-[1px] ${themeMode === 'swiss' ? 'text-red-650' : 'text-[#aec6ff]'}`}>Core Sandbox Node</h4>
+            <h4 className={`font-mono text-[9px] font-bold uppercase mb-px ${themeMode === 'swiss' ? 'text-red-650' : 'text-[#aec6ff]'}`}>Core Sandbox Node</h4>
             <p className={`font-mono text-[9px] ${t.textMuted}`}>Port Bound: 3000</p>
             <p className="font-mono text-[9px] flex items-center gap-1 mt-1 font-semibold" style={{ color: themeMode === 'swiss' ? '#B80000' : '#E4F222' }}>
               <span className="w-1.5 h-1.5 rounded-full bg-current animate-pulse"></span>
@@ -709,7 +709,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
       {/* ========================================== */}
       {/* MAIN VIEWPORT CONTAINER */}
       {/* ========================================== */}
-      <section className="flex-grow flex flex-col h-screen overflow-hidden">
+      <section className="grow flex flex-col h-screen overflow-hidden">
         
         {/* TOP BAR */}
         <header className={`h-16 border-b flex items-center justify-between px-8 select-none z-10 shrink-0 transition-colors duration-300 ${t.borderClass} ${t.panelClass}`}>
@@ -797,7 +797,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
         {uploadingState !== 'idle' && (
           <div className="bg-[#aec6ff]/5 border-b border-[#1F1F1F] py-4 px-8 flex items-center justify-between gap-4 relative select-none">
             {/* Subtle light bar progress visualizer */}
-            <div className={`absolute left-0 bottom-0 h-[2px] bg-[#0070F3] transition-all duration-[2000ms] ${uploadingState === 'scanning' ? 'w-1/4' : uploadingState === 'parsing' ? 'w-2/3' : 'w-full'}`} />
+            <div className={`absolute left-0 bottom-0 h-0.5 bg-[#0070F3] transition-all duration-2000 ${uploadingState === 'scanning' ? 'w-1/4' : uploadingState === 'parsing' ? 'w-2/3' : 'w-full'}`} />
             
             <div className="flex items-center gap-3">
               <RefreshCw className="animate-spin text-[#0070F3]" size={16} />
@@ -814,7 +814,13 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
             {/* PROGRESS TICK CHANGER FLOW */}
             <div className="flex items-center gap-6 font-mono text-[10px] text-[#aec6ff]">
               <div className="flex items-center gap-1.5">
-                <span className={`w-2 h-2 rounded-full ${uploadingState !== 'idle' ? 'bg-[#E4F222] animate-pulse' : 'bg-[#1F1F1F]'}`} />
+              <span
+  className={`w-2 h-2 rounded-full ${
+    uploadingState === 'scanning' || uploadingState === 'parsing' || uploadingState === 'completing'
+      ? 'bg-[#E4F222] animate-pulse'
+      : 'bg-[#1F1F1F]'
+  }`}
+/>
                 <span>SCAN</span>
               </div>
               <div className="flex items-center gap-1.5">
@@ -830,7 +836,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
         )}
 
         {/* SCROLLABLE SCENE CANVAS */}
-        <main className="flex-grow p-8 overflow-y-auto max-w-7xl w-full mx-auto select-text">
+        <main className="grow p-8 overflow-y-auto max-w-7xl w-full mx-auto select-text">
 
           {/* ========================================== */}
           {/* TAB 1: DASHBOARD OVERVIEW */}
@@ -969,7 +975,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                               }}
                               className="hover:bg-current/5 cursor-pointer group transition-all"
                             >
-                              <td className={`px-6 py-3 font-medium flex items-center gap-sm max-w-[220px] truncate ${t.textHeader}`}>
+                              <td className={`px-6 py-3 font-medium flex items-center gap-sm max-w-55 truncate ${t.textHeader}`}>
                                 <FileText className={`${t.logoColor} shrink-0`} size={14} />
                                 <span className="truncate">{resume.name}</span>
                               </td>
@@ -996,7 +1002,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                 <div className="flex flex-col gap-6">
                   
                   {/* Circular widget */}
-                  <div className={`rounded-sm p-5 flex flex-col items-center justify-center relative min-h-[160px] select-none hover:border-current/30 transition-all duration-200 ${t.panelClass}`}>
+                  <div className={`rounded-sm p-5 flex flex-col items-center justify-center relative min-h-40 select-none hover:border-current/30 transition-all duration-200 ${t.panelClass}`}>
                     <h3 className={`font-mono text-[9px] uppercase tracking-wider font-bold absolute top-4 left-5 ${t.textMuted}`}>SaaS Usage Quota</h3>
                     
                     <div className="flex items-center gap-5 mt-4">
@@ -1022,14 +1028,14 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                     <h3 className={`font-mono text-[9px] uppercase tracking-widest font-bold border-b pb-3 ${t.borderClass}`} style={{ color: themeMode === 'swiss' ? '#1A1A1B' : '#aec6ff' }}>
                       Active Background Job Queues (BullMQ)
                     </h3>
-                    <div className="space-y-2 my-3 overflow-y-auto max-h-[140px] font-mono text-[10px]">
+                    <div className="space-y-2 my-3 overflow-y-auto max-h-35 font-mono text-[10px]">
                       {activeJobs.length === 0 ? (
                         <p className={`italic ${t.textMuted}`}>No active task queues running. Scan complete.</p>
                       ) : (
                         activeJobs.map((j) => (
                           <div key={j.id} className={`p-2 border rounded-sm flex items-center justify-between gap-2 ${t.borderClass} ${t.inputBg}`}>
                             <span className={`uppercase font-bold text-[9px] ${t.textMuted}`}>[{j.type}]</span>
-                            <span className={`truncate max-w-[120px] font-mono ${themeMode === 'swiss' ? 'text-zinc-800' : 'text-[#aec6ff]'}`}>{j.id}</span>
+                            <span className={`truncate max-w-30 font-mono ${themeMode === 'swiss' ? 'text-zinc-800' : 'text-[#aec6ff]'}`}>{j.id}</span>
                             <span className={`px-2 py-0.5 rounded-sm text-[8px] tracking-wide uppercase font-bold ${j.status === 'completed' ? (themeMode === 'swiss' ? 'bg-red-50 text-red-700' : 'bg-[#112A1B] text-[#E4F222]') : (themeMode === 'swiss' ? 'bg-zinc-100 text-zinc-500' : 'bg-[#0070F3]/20 text-[#0070F3] border border-[#0070F3]/30')}`}>{j.status}</span>
                           </div>
                         ))
@@ -1106,7 +1112,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                       <div className="p-4 bg-[#111111] border-b border-[#1F1F1F] flex items-center justify-between">
                         <div className="flex items-center gap-2 text-white">
                           <FileText size={15} className="text-[#0070F3]" />
-                          <h4 className="font-mono text-xs font-bold truncate max-w-[150px]">{resume.name}</h4>
+                          <h4 className="font-mono text-xs font-bold truncate max-w-37.5">{resume.name}</h4>
                         </div>
                         <span className="font-mono text-[9px] text-[#aec6ff] uppercase tracking-wide bg-[#1F1F1F] py-0.5 px-1.5">
                           ID: {resume._id.substring(7)}
@@ -1155,7 +1161,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                             setActiveResumeId(resume._id);
                             setActiveTab('analysis');
                           }}
-                          className="flex-grow font-mono text-[10px] py-1.5 bg-[#0070F3] hover:bg-[#0059c5] transition-colors text-white uppercase font-bold text-center tracking-wide focus:outline-none cursor-pointer"
+                          className="grow font-mono text-[10px] py-1.5 bg-[#0070F3] hover:bg-[#0059c5] transition-colors text-white uppercase font-bold text-center tracking-wide focus:outline-none cursor-pointer"
                         >
                           Open Report
                         </button>
@@ -1222,7 +1228,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                         </p>
                       </div>
 
-                      <div className="my-4 space-y-4 text-left pr-2 overflow-y-auto max-h-[350px]">
+                      <div className="my-4 space-y-4 text-left pr-2 overflow-y-auto max-h-87.5">
                         
                         <div>
                           <h4 className="font-mono text-[11px] text-[#0070F3] uppercase tracking-wider font-bold mb-1.5">Professional summary</h4>
@@ -1309,7 +1315,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                     <div className="space-y-6">
                       
                       {/* HIGH IMPACT ADVISORY CARD */}
-                      <div className="bg-[#08090A] border-l-4 border-[#FF4D4D] border border-[#1F1F1F] rounded-sm p-5 relative overflow-hidden">
+                     <div className="bg-[#08090A] border border-[#1F1F1F] border-l-4 border-l-[#FF4D4D] rounded-sm p-5 relative overflow-hidden">
                         <div className="flex items-center justify-between mb-3 border-b border-[#1F1F1F] pb-2">
                           <div className="flex items-center gap-1.5 text-[#FF4D4D] font-mono text-xs font-bold uppercase">
                             <AlertTriangle size={14} />
@@ -1351,7 +1357,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                       </div>
 
                       {/* WORK BULLET EXAMINATIONS CARD */}
-                      <div className="bg-[#08090A] border-l-4 border-[#E4F222] border border-[#1F1F1F] rounded-sm p-5 relative overflow-hidden">
+                      <div className="bg-[#08090A] border border-[#1F1F1F] border-l-4 border-l-[#E4F222] rounded-sm p-5 relative overflow-hidden">
                         <div className="flex items-center justify-between mb-3 border-b border-[#1F1F1F] pb-2">
                           <div className="flex items-center gap-1.5 text-[#E4F222] font-mono text-xs font-bold uppercase">
                             <Sparkles size={14} />
@@ -1366,7 +1372,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                           Review recommended outcome-driven rewrites. ATS parsers match keywords inside achievements.
                         </p>
 
-                        <div className="space-y-3 font-mono text-xs pr-2 overflow-y-auto max-h-[170px]">
+                        <div className="space-y-3 font-mono text-xs pr-2 overflow-y-auto max-h-42.5">
                           {activeReport.bulletImprovements?.map((b: any, index: number) => (
                             <div key={index} className="p-3.5 bg-[#111111] border border-[#1F1F1F] rounded-sm space-y-2">
                               <div className="flex justify-between items-center text-[10px] pb-1.5 border-b border-[#1F1F1F] font-bold uppercase mb-1">
@@ -1439,7 +1445,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                   {/* METRIC DIFFERENCES PANEL HEADER */}
                   <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                                      {/* ORIGINAL VALUE */}
-                    <div className="md:col-span-4 bg-[#08090A] border border-[#1F1F1F] rounded-sm p-5 flex flex-col items-center justify-center relative min-h-[220px]">
+                    <div className="md:col-span-4 bg-[#08090A] border border-[#1F1F1F] rounded-sm p-5 flex flex-col items-center justify-center relative min-h-55">
                       <div className="absolute top-4 left-5 flex items-center gap-1.5">
                         <span className="w-2 h-2 rounded-full bg-[#FF4D4D]" />
                         <span className="font-mono text-[9px] text-[#888888] font-bold uppercase tracking-wider">Original Base</span>
@@ -1455,7 +1461,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                       <span className="font-mono text-[9px] text-[#FF4D4D] uppercase tracking-wider font-bold">Needs Improvement</span>
                     </div>
                     {/* IMPROVED VALUE */}
-                    <div className="md:col-span-4 bg-[#08090A] border border-[#1F1F1F] rounded-sm p-5 flex flex-col items-center justify-center relative min-h-[220px]">
+                    <div className="md:col-span-4 bg-[#08090A] border border-[#1F1F1F] rounded-sm p-5 flex flex-col items-center justify-center relative min-h-55">
                       <div className="absolute top-4 left-5 flex items-center gap-1.5">
                         <span className="w-2 h-2 rounded-full bg-[#E4F222] animate-pulse" />
                         <span className="font-mono text-[9px] text-[#888888] font-bold uppercase tracking-wider">AI Optimized</span>
@@ -1526,7 +1532,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                           </div>
 
                           {/* RIGHT AI DESIGN */}
-                          <div className="flex-grow p-5 bg-[#08090A]">
+                          <div className="grow p-5 bg-[#08090A]">
                             <h4 className="font-mono text-[9px] text-[#0070F3] font-bold uppercase mb-1.5">AI Optimized Injected outcomes:</h4>
                             <p className="font-sans text-xs text-[#aec6ff] leading-relaxed font-semibold pr-2 mb-2">
                               "{b.improved}"
@@ -1671,7 +1677,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                 </div>
 
                 {/* TELEMETRY LOGGER PANEL */}
-                <div className="lg:col-span-2 bg-[#08090A] border border-[#1F1F1F] rounded-sm flex flex-col min-h-[400px]">
+                <div className="lg:col-span-2 bg-[#08090A] border border-[#1F1F1F] rounded-sm flex flex-col min-h-100">
                   <div className="p-4 bg-[#111111] border-b border-[#1F1F1F] rounded-t-none flex items-center justify-between font-mono text-[9px] uppercase font-bold tracking-wider text-[#aec6ff] pt-3 pb-3">
                     <div className="flex items-center gap-1.5">
                       <Terminal size={14} className="text-[#0070F3]" />
@@ -1681,7 +1687,7 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
                   </div>
 
                   {/* LOGS INNER PANEL */}
-                  <div className="p-5 flex-grow overflow-y-auto max-h-[360px] font-mono text-[10px] leading-relaxed text-[#888888] space-y-4">
+                  <div className="p-5 grow overflow-y-auto max-h-90 font-mono text-[10px] leading-relaxed text-[#888888] space-y-4">
                     {auditLogs.length === 0 ? (
                       <p className="text-[#888888] italic font-mono py-4 text-center">No active audit traces logged yet. Process resumes triggers to append log events.</p>
                     ) : (
@@ -1777,9 +1783,9 @@ To ensure flawless ATS scoring and parsing, please replace this header with the 
 
               {/* LinkedIn Option inside Modal */}
               <div className="flex items-center gap-4 select-none">
-                <div className="h-px bg-[#1F1F1F] flex-grow" />
+                <div className="h-px bg-[#1F1F1F] grow" />
                 <span className="font-mono text-[10px] text-[#888888] lowercase">or sync with social</span>
-                <div className="h-px bg-[#1F1F1F] flex-grow" />
+                <div className="h-px bg-[#1F1F1F] grow" />
               </div>
 
               <div className="flex justify-center select-none">

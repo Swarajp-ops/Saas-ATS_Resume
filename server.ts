@@ -5,7 +5,7 @@ import { apiRouter } from './server/routes';
 
 async function bootstrapServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = Number(process.env.PORT) || 3000;
 
   // Global Middlewares for Security and Compliance
   app.use(express.json());

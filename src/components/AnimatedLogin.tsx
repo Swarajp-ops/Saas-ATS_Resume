@@ -184,7 +184,7 @@ export default function AnimatedLogin({ onLoginSuccess, themeMode, THEMES }: Ani
     <div className={`fixed inset-0 z-50 flex flex-col md:flex-row h-screen w-full transition-colors duration-300 font-sans ${t.appClass} overflow-hidden`}>
       
       {/* LEFT PANEL: WORLD MATRIX GRAPH */}
-      <div className="flex-grow md:w-3/5 relative flex flex-col justify-between p-6 md:p-12 border-b md:border-b-0 md:border-r border-[#1D2D44]/30 bg-[#060A13]/90 select-none">
+      <div className="grow md:w-3/5 relative flex flex-col justify-between p-6 md:p-12 border-b md:border-b-0 md:border-r border-[#1D2D44]/30 bg-[#060A13]/90 select-none">
         
         {/* UPPER CAPTION */}
         <div className="z-10">
@@ -204,7 +204,7 @@ export default function AnimatedLogin({ onLoginSuccess, themeMode, THEMES }: Ani
 
         {/* GLOWING INTERACTIVE NETWORK VECTOR MAP */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-40 sm:opacity-85 z-0">
-          <svg className="w-full max-w-[640px] aspect-[2/1]" viewBox="0 0 600 300" fill="none">
+          <svg className="w-full max-w-160 aspect-2/1" viewBox="0 0 600 300" fill="none">
             {/* Ambient map background grid */}
             <defs>
               <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -320,7 +320,7 @@ export default function AnimatedLogin({ onLoginSuccess, themeMode, THEMES }: Ani
                     <span className="text-[#10F3DC] font-bold">{feed.emoji} {feed.name}</span>
                     <span className="text-zinc-500">[{feed.location}]</span>
                   </div>
-                  <span className="text-zinc-300 italic max-w-[150px] truncate">{feed.action}</span>
+                  <span className="text-zinc-300 italic max-w-37.5 truncate">{feed.action}</span>
                 </motion.div>
               ))}
             </AnimatePresence>
@@ -333,7 +333,7 @@ export default function AnimatedLogin({ onLoginSuccess, themeMode, THEMES }: Ani
       <div className="w-full md:w-2/5 flex flex-col justify-center p-8 md:p-12 z-10 relative bg-black/40">
         
         {/* Background gradient block for texture */}
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/20 via-black/90 to-emerald-950/20 -z-10" />
+        <div className="absolute inset-0 bg-linear-to-br from-indigo-950/20 via-black/90 to-emerald-950/20 -z-10" />
 
         <div className="max-w-sm w-full mx-auto">
           
@@ -421,7 +421,7 @@ export default function AnimatedLogin({ onLoginSuccess, themeMode, THEMES }: Ani
                   <select 
                     value={location}
                     onChange={(e: any) => setLocation(e.target.value)}
-                    className="w-full py-1.5 pl-9 pr-3 text-xs bg-white/5 border border-white/10 text-white rounded-sm focus:outline-none focus:border-[#10F3DC] transition-all font-sans cursor-pointer uppercase font-mono"
+                    className="w-full py-1.5 pl-9 pr-3 text-xs bg-white/5 border border-white/10 text-white rounded-sm focus:outline-none focus:border-[#10F3DC] transition-all cursor-pointer uppercase font-mono"
                   >
                     {GLOBAL_NODES.map((city) => (
                       <option key={city.name} value={city.name} className="bg-slate-900 text-white">
@@ -494,9 +494,9 @@ export default function AnimatedLogin({ onLoginSuccess, themeMode, THEMES }: Ani
           </div>
 
           <div className="my-5 flex items-center gap-2">
-            <div className="h-px bg-white/10 flex-grow" />
+            <div className="h-px bg-white/10 grow" />
             <span className="font-mono text-[8.5px] text-zinc-500 uppercase tracking-widest">OR CONNECT SECURELY</span>
-            <div className="h-px bg-white/10 flex-grow" />
+            <div className="h-px bg-white/10 grow" />
           </div>
 
           {/* GUEST MODE BYPASS */}

@@ -1,0 +1,317 @@
+{
+  "users": [
+    {
+      "_id": "user_str5a7dda",
+      "email": "swaraj0218@gmail.com",
+      "passwordHash": "hash_shraddhie02@12",
+      "name": "Swaraj Patil",
+      "role": "user",
+      "verified": true,
+      "registrationDate": "2026-05-28T14:19:12.916Z",
+      "lastActive": "2026-05-28T14:19:12.944Z",
+      "quotaCredits": 50,
+      "aiPreferences": {
+        "preferredStyle": "modern"
+      }
+    },
+    {
+      "_id": "user_zn2rtjhtn",
+      "email": "john@resumesaas.com",
+      "passwordHash": "hash_password",
+      "name": "John Doe",
+      "role": "user",
+      "verified": true,
+      "registrationDate": "2026-05-28T14:22:39.460Z",
+      "lastActive": "2026-05-28T14:22:39.482Z",
+      "quotaCredits": 50,
+      "aiPreferences": {
+        "preferredStyle": "modern"
+      }
+    },
+    {
+      "_id": "user_dhreqlcor",
+      "email": "pilly2702@gmail.com",
+      "passwordHash": "hash_swarajsanii1302",
+      "name": "Pillya patil",
+      "role": "user",
+      "verified": true,
+      "registrationDate": "2026-05-28T14:27:47.642Z",
+      "lastActive": "2026-05-28T14:27:47.661Z",
+      "quotaCredits": 50,
+      "aiPreferences": {
+        "preferredStyle": "modern"
+      }
+    }
+  ],
+  "sessions": [
+    {
+      "_id": "session_n529ercjy",
+      "userId": "user_str5a7dda",
+      "refreshToken": "token_rf_7heposxjce",
+      "deviceInfo": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "ipAddress": "127.0.0.1",
+      "revoked": false,
+      "expiresAt": "2026-06-04T14:19:12.941Z",
+      "createdAt": "2026-05-28T14:19:12.941Z"
+    },
+    {
+      "_id": "session_sbsik3sks",
+      "userId": "user_zn2rtjhtn",
+      "refreshToken": "token_rf_czvjy7nsqpt",
+      "deviceInfo": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "ipAddress": "127.0.0.1",
+      "revoked": false,
+      "expiresAt": "2026-06-04T14:22:39.480Z",
+      "createdAt": "2026-05-28T14:22:39.480Z"
+    },
+    {
+      "_id": "session_vj9f4vm2h",
+      "userId": "user_dhreqlcor",
+      "refreshToken": "token_rf_6hfzlps6mju",
+      "deviceInfo": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "ipAddress": "127.0.0.1",
+      "revoked": false,
+      "expiresAt": "2026-06-04T14:27:47.660Z",
+      "createdAt": "2026-05-28T14:27:47.660Z"
+    }
+  ],
+  "resumes": [
+    {
+      "_id": "resume_od6eooiq1",
+      "userId": "token_ac_user_str5a7dda",
+      "name": "backend-developer2 - Template 18.pdf",
+      "isDeleted": false,
+      "lastActivity": "2026-05-28T14:22:43.289Z",
+      "currentVersionId": "v_orig_bkznb4",
+      "createdAt": "2026-05-28T14:22:39.500Z",
+      "updatedAt": "2026-05-28T14:22:39.500Z",
+      "targetRole": "Software Engineer"
+    }
+  ],
+  "resumeFiles": [
+    {
+      "_id": "file_tk58xdvtu",
+      "resumeId": "resume_od6eooiq1",
+      "userId": "token_ac_user_str5a7dda",
+      "fileName": "backend-developer2 - Template 18.pdf",
+      "fileSize": 5322,
+      "mimeType": "application/pdf",
+      "s3Key": "resumes/resume_od6eooiq1/backend-developer2 - Template 18.pdf",
+      "bucketName": "resume-s3-secure-bucket-production",
+      "status": "analysis_complete",
+      "createdAt": "2026-05-28T14:22:39.502Z",
+      "updatedAt": "2026-05-28T14:22:40.719Z",
+      "malwareScanResult": "clean",
+      "malwareScanLogs": "ClamAV Malware Engine v0.104.2: Scan complete. 0 viruses detected. File is clean."
+    }
+  ],
+  "resumeParses": [
+    {
+      "_id": "parse_by6efxkmu",
+      "resumeFileId": "file_tk58xdvtu",
+      "resumeId": "resume_od6eooiq1",
+      "userId": "token_ac_user_str5a7dda",
+      "rawText": "obj Developer2 Template m114 Google Docs Renderer)>> endobj obj endobj obj stream q~? H{* rH> Daiy UJ# X|]\\ OJqV eJ9 e8_g8 M)4 cte ZTI j]` KTd Xvr w,I P:v aG*6 t-S L}A gI85 oHV Ul)xv j:5Yw WMd RpM p1` nuL6E aT> bg2 h'F j/( o;v IP! hI~R h.b STj ZJ5 s'zjl WTKw G9) QC~H phl b<i5L Yf-p= L:[h Xd} c!c c=M B2h Xyo Z/\" ug61# e7a g|^juo*]9 Y\\/yUv aU8 m4g e!`I0 Puv Yu9 P:^ p9) P}Y(* aZN d;q Jj/G L9EF ffY FAV oW' k/7 d(# e]Z Ti> NC! D=! vNS Gu: e^1 GdX Jjt Fto X*x C=u y/B N;7 dfUO n?9 b,\"; lyR}7O/ y^pJH C`O W[n rlh x}, O](<N k@Ka b!t a-3Y{| l,9 YgC wLa. OM/ ctN ynh^ yG3 B!s Lx,t i~t j&v@I T~b Gg7Se iVf3x`' x0/OD Mrcs QB1 fi# d&g DKc:i gyd? E|)S f<=C jF4_J Xd<8 c,X zD7 dHp=IE LC~o[ Ix> C\\, JMu z^55 fm\\ ZcL Z// pc, pO6X D5BR t<c J9^ c{D jxqOD c:G%6 t(M>f Tj` wT& r^V jVT endstream endobj obj R>> R>>>> R>> endobj obj R]>> endobj obj R>> endobj obj stream l6!@^ lBH Q+US) c|9 c<@ U`T tD} H+3 oe[ JNlA+ W*z lBY E(k JZ0 cz0 sou h_h-(/ OI{Fh' tB; NHk HL\\b Kgv| F4&6 x{l8 ggg xXf Ngy I6A w;{ WR2 oIi& gKH vt) yUm-- N|BVT ma4 x*%+i KkbdlT cVne e21[aI g,FmjR S@l| yN= SSSf vYVbJb Hc<+F- td8 nGF SlNr G\\j* mP\" PU'z v]E gAk Tv+2oZ endstream endobj obj R>> endobj obj endobj obj stream rh% Qy<dr z[`j s&a BdNn ED5Q QCtD D%QAT! DT% F8T7= e|Z endstream endobj obj R>> endobj obj stream xTE Hw:$ mnL+. EXF| OS> A5, V&e e0J f\\@ c`, Tb& fA9 i.BZF!T tC)P( f)L GR; hIL cX/ f54 V4Y X\\P uS] pw0 d1~ n-(H vA6 dY.{ hn) iriY q$8 WuZ eQK#9 Y\\Q ZL#a Zf`\" GOe< u~LW un0 y_zC zwz Pg4<0E r'id Z,oc Im$ N9D| x$E Bd} M!) tW>VN O/+ n\\9{ BId l/| Ivz k@k IOOc qU7 D'P QL!V jEM Gu| eHK3@G mD9 Ey1 n14 Ywc gV^^Y- i>H R)n yDF LO3X;Z] CyD@v C9} jbr Qvc.j E@{ DW0 eCK e8P MQg Ex= gMe me93 ljqZcb] DJ3 Hjm NXc rR} Q>^ b-% nyj zPf, B7#%c WWv RfW) U&b QbQ WP#* ic&~ atD P?n JOG5b rWx qQ/ d,Y dk# X\\1 ZV#y X2a Et= e0/#n wM' GuR I7_[ k_! z&6 ja- xatyIa p!gc(S b)`1 Kt3f m/C[ KS0 h6M k7s NRB T~J L.+ nyySJ UQ) vdq hg4_ f@tdt\" nZ5 xjFe P76 mFa endstream endobj obj R>> endobj obj endobj obj stream Pi? Lx,N p35 q23[ BOA zhh we\\ bO2 endstream endobj obj R>> endobj obj stream TMl vmb P84 d/Z7 ysZm a'> qr; kN}`xx t\"r Nl/ q?-}x pj|( Mm89 q3}: H#*o PeC xiH vdTk y)h d/3 CQ5 endstream endobj obj R>> endobj obj endobj obj stream LTZ oilp8Gc endstream endobj obj R>> endobj obj stream Tt| P[[S= on} n/[ g~uk# z~M g{> z0J e6*aS c!( u9Tb= B`* K7Y Fe#U FhC c#@ V,vGZqY U^V sP*^ eP' QJz pEH g*\"c#r6 Nd0 QfS xep m>S d*a JRi tG3n c*~ nF, LQ} jT\" D[= ijalT I:9 jdy Q11f*j NuA lti K/K UD2 Y!z yxV xOCn S?Q=^ I%[E nc1w btE DeY kOI M-^ Z.} UWqZ qYqt c4X M+g ebo o${ Li[ s3l sJHH N2CRO f9) lQO C*+ V4HhB@ sT~iGwJ k:x FN^ l!$ O|x SJwM nS\\< B\\z KZ_t kVW\\<p xSf. iHp bO9 DHD AC2 kH!y endstream endobj obj R>> endobj obj endobj obj stream M&I uq0uz I]S u0o p{6f6!+| endstream endobj obj R>> endobj obj stream hs!s N-3[O g?l fhs7/w C9* o4j Dyh( eH' k!? B'W RP{Vj EP_ eFO@M WqavZ JfM qSs2 Z5mxj$ Q4YA pKK dEf fOx e/^ VDZ\"- iTR0 t@f bzE CkA3 Z$A A[P emN em9hNx T;P Pj8kl nl,u_4 w@? M|S4 h3_ F&x Cfx sK&! tzn< j~j pT;V8 iC? qZ! pia ICj E(>Z Ptc pl@u S@^ av: GgC54U dCiY6b zRn IF.$# O*w dT!& L545 M<{ D,# INj C2_y~ aEU P0tL gQm3 j#5 O>3 ZJT DHlJ Gs\" q50 KIN cB50 lF8 Hh( Ga<B g-A UG)& E$^S9ac Wsy Es] Hlp M[XY vP$ A9^ o(' LQd LVL; U:JU f_= ONV vsi3 T0@ qV[ G5q0 JJ' G||> nnb& l=y Zjmq` SHlU fT, A&J AuJD I?|% vI5o= m0_U q!=v so` JzEI kUl v?u f/! Sq; NoQ DBL TT3 WQAno f7B* PYaB2@ Lm) P[b: W(7h_m TK/ X4^ I1Q xj>Q ogU^: x\\H QA@ mJavu\") a?& TX! r>8 o\\#5 ZWf DqKi yy# E3w Wie Z{, no1 O]* q@i lq*H[p g'oRf NB=O Oa4 wBB P03 IcU N#% W-% w|e K`} D\"_ I[[ m/\\ BF]m cOJo VH_m w=;s#6f W,!W g)41 zLDjM FY]a Rzg c|AjGb W5d YMM Pf? sX? ADn Bwy N\\ED W'G' p7? Pn* Nh: XlZ gnL eY8} PL] EC\\< iF+ uq# Qbk` K&*a g>M F&[b bKSl pU[J Bd_ XQ1. Tz;8cn VL+ UEx d#sqa, uPz qxp b#n AhwV endstream endobj obj R>> endobj obj endobj obj stream b,c fvf pWD EoV QUyo L(y dEd YN( endstream endobj obj R>> endobj obj stream h-g n:$@6 F8i EEEe NU} T}[} UW\" G(F aL[ WT|k w+a=B x<( YP0~ CFQA N\"# GY@ H2v Z[8. Q#\\ J3^ DVU K\\a] KN8U lAk oUsh TT5 ZTTS H*. Y\"<; l#KG( eOUh TEL gShbn UP~K qS. v@1$E Ze~ i>nC3 p^U9 V!x s<K J(x iP0 f>h na0 k0r j(- X_9 Haj{ tThK uXcE'c rA? Q(@ Kg4 QAm m%] Mvj Qv?H a]/~:@I tdh X$:\\ fKfFR\"I A|0\\ Z[% pZ{e pUU SNw X,L fYBI o_I G31i Q7- d3y Fwc QOt{y dD: RGVs@ u7V F.y olM zq! Q7^ Bp&w DA, b:P eBK YB` ILA h&V A61 DPA Pss8Y Uvv QU|S s6>u Rs[ a\\p c]z_ hDmm- GG6 SE' T.IC q\\X R>g^ TWXDd; IGUfX j[f tE{}Z TAN` Ygq- m?DUBt Q.- yK\" NM_+y+ k68 q\\s4q< K6>W k.< DM<) WLm O^'G p!Ysg tw=_4 Y~w hTr DCH ezn nmJ QIhSz j[ZY pAz%) xJ,gRP XOn vxP Ial W.] endstream endobj obj R>> endobj obj endobj obj stream PI? eQ07 YYr SX% VHb x$Q saJ endstream endobj obj R>> endobj obj stream xTU M#* Wkg wDqI xTe uHB JK: y5u H&] FK+ a2W m)6 pzfr cL\\ x^1 PYp r5[[ FK0 M.~JB f<!f sxOD zc0{ V.cZ Nc\\\\ hy@y yXA eZ&n dw& LO) L]L c|. sx1 SDs b1w Q<d ayF PF( n=d X&OY KJ_S DqR> O*W dX: R-[6 Q+U jk& Y-f ug5 l*mm RK| Q,F cJUf x~o q*g s}F Kec dz| ec&V mUo bbCCd xTT OgvV) S-m C!Q sk| Ur.u f0Y J\"NQ5 L]K v*& E63 e:\" U~H z|2 BfN qoA_y SUj9 H;U K:\\ OcL S'SwQOQ5 u8u2u9 G*kSEl71 ADA L<ub0\\\" Wmw| RW;^ RG8 J5:j uMt t!3X G{= eST PVQ e>k gIjU tIq IO7l jc&E i>k Pgq#& TT6Nr U)i h~} lhZ egs FE9g Rh/ Cv0 EO8 B/2 Ad> YD~ b\\H c$9 i_` n$o XMnD N>j w<A FL?~^L?n FL?~^L? QX~ ai# tBzjj{; Umo' lo' ai# ai#N ai# dc\\~~{; I%% ai# endstream endobj obj R>> endobj obj endobj obj stream FF! CkX q=0 oT? QVor endstream endobj obj R>> endobj xref trailer R>> startxref",
+      "structuredJson": {
+        "contactInfo": {
+          "name": "obj Developer2 Template m114 Google Docs Renderer)>> endobj obj endobj obj stream q~? H{* rH> Daiy UJ# X|]\\ OJqV eJ9 e8_g8 M)4 cte ZTI j]` KTd Xvr w,I P:v aG*6 t-S L}A gI85 oHV Ul)xv j:5Yw WMd RpM p1` nuL6E aT> bg2 h'F j/( o;v IP! hI~R h.b STj ZJ5 s'zjl WTKw G9) QC~H phl b<i5L Yf-p= L:[h Xd} c!c c=M B2h Xyo Z/\" ug61# e7a g|^juo*]9 Y\\/yUv aU8 m4g e!`I0 Puv Yu9 P:^ p9) P}Y(* aZN d;q Jj/G L9EF ffY FAV oW' k/7 d(# e]Z Ti> NC! D=! vNS Gu: e^1 GdX Jjt Fto X*x C=u y/B N;7 dfUO n?9 b,\"; lyR}7O/ y^pJH C`O W[n rlh x}, O](<N k@Ka b!t a-3Y{| l,9 YgC wLa. OM/ ctN ynh^ yG3 B!s Lx,t i~t j&v@I T~b Gg7Se iVf3x`' x0/OD Mrcs QB1 fi# d&g DKc:i gyd? E|)S f<=C jF4_J Xd<8 c,X zD7 dHp=IE LC~o[ Ix> C\\, JMu z^55 fm\\ ZcL Z// pc, pO6X D5BR t<c J9^ c{D jxqOD c:G%6 t(M>f Tj` wT& r^V jVT endstream endobj obj R>> R>>>> R>> endobj obj R]>> endobj obj R>> endobj obj stream l6!@^ lBH Q+US) c|9 c<@ U`T tD} H+3 oe[ JNlA+ W*z lBY E(k JZ0 cz0 sou h_h-(/ OI{Fh' tB; NHk HL\\b Kgv| F4&6 x{l8 ggg xXf Ngy I6A w;{ WR2 oIi& gKH vt) yUm-- N|BVT ma4 x*%+i KkbdlT cVne e21[aI g,FmjR S@l| yN= SSSf vYVbJb Hc<+F- td8 nGF SlNr G\\j* mP\" PU'z v]E gAk Tv+2oZ endstream endobj obj R>> endobj obj endobj obj stream rh% Qy<dr z[`j s&a BdNn ED5Q QCtD D%QAT! DT% F8T7= e|Z endstream endobj obj R>> endobj obj stream xTE Hw:$ mnL+. EXF| OS> A5, V&e e0J f\\@ c`, Tb& fA9 i.BZF!T tC)P( f)L GR; hIL cX/ f54 V4Y X\\P uS] pw0 d1~ n-(H vA6 dY.{ hn) iriY q$8 WuZ eQK#9 Y\\Q ZL#a Zf`\" GOe< u~LW un0 y_zC zwz Pg4<0E r'id Z,oc Im$ N9D| x$E Bd} M!) tW>VN O/+ n\\9{ BId l/| Ivz k@k IOOc qU7 D'P QL!V jEM Gu| eHK3@G mD9 Ey1 n14 Ywc gV^^Y- i>H R)n yDF LO3X;Z] CyD@v C9} jbr Qvc.j E@{ DW0 eCK e8P MQg Ex= gMe me93 ljqZcb] DJ3 Hjm NXc rR} Q>^ b-% nyj zPf, B7#%c WWv RfW) U&b QbQ WP#* ic&~ atD P?n JOG5b rWx qQ/ d,Y dk# X\\1 ZV#y X2a Et= e0/#n wM' GuR I7_[ k_! z&6 ja- xatyIa p!gc(S b)`1 Kt3f m/C[ KS0 h6M k7s NRB T~J L.+ nyySJ UQ) vdq hg4_ f@tdt\" nZ5 xjFe P76 mFa endstream endobj obj R>> endobj obj endobj obj stream Pi? Lx,N p35 q23[ BOA zhh we\\ bO2 endstream endobj obj R>> endobj obj stream TMl vmb P84 d/Z7 ysZm a'> qr; kN}`xx t\"r Nl/ q?-}x pj|( Mm89 q3}: H#*o PeC xiH vdTk y)h d/3 CQ5 endstream endobj obj R>> endobj obj endobj obj stream LTZ oilp8Gc endstream endobj obj R>> endobj obj stream Tt| P[[S= on} n/[ g~uk# z~M g{> z0J e6*aS c!( u9Tb= B`* K7Y Fe#U FhC c#@ V,vGZqY U^V sP*^ eP' QJz pEH g*\"c#r6 Nd0 QfS xep m>S d*a JRi tG3n c*~ nF, LQ} jT\" D[= ijalT I:9 jdy Q11f*j NuA lti K/K UD2 Y!z yxV xOCn S?Q=^ I%[E nc1w btE DeY kOI M-^ Z.} UWqZ qYqt c4X M+g ebo o${ Li[ s3l sJHH N2CRO f9) lQO C*+ V4HhB@ sT~iGwJ k:x FN^ l!$ O|x SJwM nS\\< B\\z KZ_t kVW\\<p xSf. iHp bO9 DHD AC2 kH!y endstream endobj obj R>> endobj obj endobj obj stream M&I uq0uz I]S u0o p{6f6!+| endstream endobj obj R>> endobj obj stream hs!s N-3[O g?l fhs7/w C9* o4j Dyh( eH' k!? B'W RP{Vj EP_ eFO@M WqavZ JfM qSs2 Z5mxj$ Q4YA pKK dEf fOx e/^ VDZ\"- iTR0 t@f bzE CkA3 Z$A A[P emN em9hNx T;P Pj8kl nl,u_4 w@? M|S4 h3_ F&x Cfx sK&! tzn< j~j pT;V8 iC? qZ! pia ICj E(>Z Ptc pl@u S@^ av: GgC54U dCiY6b zRn IF.$# O*w dT!& L545 M<{ D,# INj C2_y~ aEU P0tL gQm3 j#5 O>3 ZJT DHlJ Gs\" q50 KIN cB50 lF8 Hh( Ga<B g-A UG)& E$^S9ac Wsy Es] Hlp M[XY vP$ A9^ o(' LQd LVL; U:JU f_= ONV vsi3 T0@ qV[ G5q0 JJ' G||> nnb& l=y Zjmq` SHlU fT, A&J AuJD I?|% vI5o= m0_U q!=v so` JzEI kUl v?u f/! Sq; NoQ DBL TT3 WQAno f7B* PYaB2@ Lm) P[b: W(7h_m TK/ X4^ I1Q xj>Q ogU^: x\\H QA@ mJavu\") a?& TX! r>8 o\\#5 ZWf DqKi yy# E3w Wie Z{, no1 O]* q@i lq*H[p g'oRf NB=O Oa4 wBB P03 IcU N#% W-% w|e K`} D\"_ I[[ m/\\ BF]m cOJo VH_m w=;s#6f W,!W g)41 zLDjM FY]a Rzg c|AjGb W5d YMM Pf? sX? ADn Bwy N\\ED W'G' p7? Pn* Nh: XlZ gnL eY8} PL] EC\\< iF+ uq# Qbk` K&*a g>M F&[b bKSl pU[J Bd_ XQ1. Tz;8cn VL+ UEx d#sqa, uPz qxp b#n AhwV endstream endobj obj R>> endobj obj endobj obj stream b,c fvf pWD EoV QUyo L(y dEd YN( endstream endobj obj R>> endobj obj stream h-g n:$@6 F8i EEEe NU} T}[} UW\" G(F aL[ WT|k w+a=B x<( YP0~ CFQA N\"# GY@ H2v Z[8. Q#\\ J3^ DVU K\\a] KN8U lAk oUsh TT5 ZTTS H*. Y\"<; l#KG( eOUh TEL gShbn UP~K qS. v@1$E Ze~ i>nC3 p^U9 V!x s<K J(x iP0 f>h na0 k0r j(- X_9 Haj{ tThK uXcE'c rA? Q(@ Kg4 QAm m%] Mvj Qv?H a]/~:@I tdh X$:\\ fKfFR\"I A|0\\ Z[% pZ{e pUU SNw X,L fYBI o_I G31i Q7- d3y Fwc QOt{y dD: RGVs@ u7V F.y olM zq! Q7^ Bp&w DA, b:P eBK YB` ILA h&V A61 DPA Pss8Y Uvv QU|S s6>u Rs[ a\\p c]z_ hDmm- GG6 SE' T.IC q\\X R>g^ TWXDd; IGUfX j[f tE{}Z TAN` Ygq- m?DUBt Q.- yK\" NM_+y+ k68 q\\s4q< K6>W k.< DM<) WLm O^'G p!Ysg tw=_4 Y~w hTr DCH ezn nmJ QIhSz j[ZY pAz%) xJ,gRP XOn vxP Ial W.] endstream endobj obj R>> endobj obj endobj obj stream PI? eQ07 YYr SX% VHb x$Q saJ endstream endobj obj R>> endobj obj stream xTU M#* Wkg wDqI xTe uHB JK: y5u H&] FK+ a2W m)6 pzfr cL\\ x^1 PYp r5[[ FK0 M.~JB f<!f sxOD zc0{ V.cZ Nc\\\\ hy@y yXA eZ&n dw& LO) L]L c|. sx1 SDs b1w Q<d ayF PF( n=d X&OY KJ_S DqR> O*W dX: R-[6 Q+U jk& Y-f ug5 l*mm RK| Q,F cJUf x~o q*g s}F Kec dz| ec&V mUo bbCCd xTT OgvV) S-m C!Q sk| Ur.u f0Y J\"NQ5 L]K v*& E63 e:\" U~H z|2 BfN qoA_y SUj9 H;U K:\\ OcL S'SwQOQ5 u8u2u9 G*kSEl71 ADA L<ub0\\\" Wmw| RW;^ RG8 J5:j uMt t!3X G{= eST PVQ e>k gIjU tIq IO7l jc&E i>k Pgq#& TT6Nr U)i h~} lhZ egs FE9g Rh/ Cv0 EO8 B/2 Ad> YD~ b\\H c$9 i_` n$o XMnD N>j w<A FL?~^L?n FL?~^L? QX~ ai# tBzjj{; Umo' lo' ai# ai#N ai# dc\\~~{; I%% ai# endstream endobj obj R>> endobj obj endobj obj stream FF! CkX q=0 oT? QVor endstream endobj obj R>> endobj xref trailer R>> startxref",
+          "location": "United States"
+        },
+        "summary": "obj Developer2 Template m114 Google Docs Renderer)>> endobj obj endobj obj stream q~? H{* rH> Daiy UJ# X|]\\ OJqV eJ9 e8_g8 M)4 cte ZTI j]` KTd Xvr w,I P:v aG*6 t-S L}A gI85 oHV Ul)xv j:5Yw WMd RpM p1` nuL6E aT> bg2 h'F j/( o;v IP! hI~R h.b STj ZJ5 s'zjl WTKw G9) QC~H phl b<i5L Yf-p= L:[h Xd} c!c c=M B2h Xyo Z/\" ug61# e7a g|^juo*]9 Y\\/yUv aU8 m4g e!`I0 Puv Yu9 P:^ p9) P}Y(* aZN d;q Jj/G L9EF ffY FAV oW' k/7 d(# e]Z Ti> NC! D=! vNS Gu: e^1 GdX Jjt Fto X*x C=u y/B N;7 dfUO n?9 b,\"; lyR}7O/ y^pJH C`O W[n rlh x}, O](<N k@Ka b!t a-3Y{| l,9 YgC wLa. OM/ ctN ynh^ yG3 B!s Lx,t i~t j&v@I T~b Gg7Se iVf3x`' x0/OD Mrcs QB1 fi# d&g DKc:i gyd? E|)S f<=C jF4_J Xd<8 c,X zD7 dHp=IE LC~o[ Ix> C\\, JMu z^55 fm\\ ZcL Z// pc, pO6X D5BR t<c J9^ c{D jxqOD c:G%6 t(M>f Tj` wT& r^V jVT endstream endobj obj R>> R>>>> R>> endobj obj R]>> endobj obj R>> endobj obj stream l6!@^ lBH Q+US) c|9 c<@ U`T tD} H+3 oe[ JNlA+ W*z lBY E(k JZ0 cz0 sou h_h-(/ OI{Fh' tB; NHk HL\\b Kgv| F4&6 x{l8 ggg xXf Ngy I6A w;{ WR2 oIi& gKH vt) yUm-- N|BVT ma4 x*%+i KkbdlT cVne e21[aI g,FmjR S@l| yN= SSSf vYVbJb Hc<+F- td8 nGF SlNr G\\j* mP\" PU'z v]E gAk Tv+2oZ endstream endobj obj R>> endobj obj endobj obj stream rh% Qy<dr z[`j s&a BdNn ED5Q QCtD D%QAT! DT% F8T7= e|Z endstream endobj obj R>> endobj obj stream xTE Hw:$ mnL+. EXF| OS> A5, V&e e0J f\\@ c`, Tb& fA9 i.BZF!T tC)P( f)L GR; hIL cX/ f54 V4Y X\\P uS] pw0 d1~ n-(H vA6 dY.{ hn) iriY q$8 WuZ eQK#9 Y\\Q ZL#a Zf`\" GOe< u~LW un0 y_zC zwz Pg4<0E r'id Z,oc Im$ N9D| x$E Bd} M!) tW>VN O/+ n\\9{ BId l/| Ivz k@k IOOc qU7 D'P QL!V jEM Gu| eHK3@G mD9 Ey1 n14 Ywc gV^^Y- i>H R)n yDF LO3X;Z] CyD@v C9} jbr Qvc.j E@{ DW0 eCK e8P MQg Ex= gMe me93 ljqZcb] DJ3 Hjm NXc rR} Q>^ b-% nyj zPf, B7#%c WWv RfW) U&b QbQ WP#* ic&~ atD P?n JOG5b rWx qQ/ d,Y dk# X\\1 ZV#y X2a Et= e0/#n wM' GuR I7_[ k_! z&6 ja- xatyIa p!gc(S b)`1 Kt3f m/C[ KS0 h6M k7s NRB T~J L.+ nyySJ UQ) vdq hg4_ f@tdt\" nZ5 xjFe P76 mFa endstream endobj obj R>> endobj obj endobj obj stream Pi? Lx,N p35 q23[ BOA zhh we\\ bO2 endstream endobj obj R>> endobj obj stream TMl vmb P84 d/Z7 ysZm a'> qr; kN}`xx t\"r Nl/ q?-}x pj|( Mm89 q3}: H#*o PeC xiH vdTk y)h d/3 CQ5 endstream endobj obj R>> endobj obj endobj obj stream LTZ oilp8Gc endstream endobj obj R>> endobj obj stream Tt| P[[S= on} n/[ g~uk# z~M g{> z0J e6*aS c!( u9Tb= B`* K7Y Fe#U FhC c#@ V,vGZqY U^V sP*^ eP' QJz pEH g*\"c#r6 Nd0 QfS xep m>S d*a JRi tG3n c*~ nF, LQ} jT\" D[= ijalT I:9 jdy Q11f*j NuA lti K/K UD2 Y!z yxV xOCn S?Q=^ I%[E nc1w btE DeY kOI M-^ Z.} UWqZ qYqt c4X M+g ebo o${ Li[ s3l sJHH N2CRO f9) lQO C*+ V4HhB@ sT~iGwJ k:x FN^ l!$ O|x SJwM nS\\< B\\z KZ_t kVW\\<p xSf. iHp bO9 DHD AC2 kH!y endstream endobj obj R>> endobj obj endobj obj stream M&I uq0uz I]S u0o p{6f6!+| endstream endobj obj R>> endobj obj stream hs!s N-3[O g?l fhs7/w C9* o4j Dyh( eH' k!? B'W RP{Vj EP_ eFO@M WqavZ JfM qSs2 Z5mxj$ Q4YA pKK dEf fOx e/^ VDZ\"- iTR0 t@f bzE CkA3 Z$A A[P emN em9hNx T;P Pj8kl nl,u_4 w@? M|S4 h3_ F&x Cfx sK&! tzn< j~j pT;V8 iC? qZ! pia ICj E(>Z Ptc pl@u S@^ av: GgC54U dCiY6b zRn IF.$# O*w dT!& L545 M<{ D,# INj C2_y~ aEU P0tL gQm3 j#5 O>3 ZJT DHlJ Gs\" q50 KIN cB50 lF8 Hh( Ga<B g-A UG)& E$^S9ac Wsy Es] Hlp M[XY vP$ A9^ o(' LQd LVL; U:JU f_= ONV vsi3 T0@ qV[ G5q0 JJ' G||> nnb& l=y Zjmq` SHlU fT, A&J AuJD I?|% vI5o= m0_U q!=v so` JzEI kUl v?u f/! Sq; NoQ DBL TT3 WQAno f7B* PYaB2@ Lm) P[b: W(7h_m TK/ X4^ I1Q xj>Q ogU^: x\\H QA@ mJavu\") a?& TX! r>8 o\\#5 ZWf DqKi yy# E3w Wie Z{, no1 O]* q@i lq*H[p g'oRf NB=O Oa4 wBB P03 IcU N#% W-% w|e K`} D\"_ I[[ m/\\ BF]m cOJo VH_m w=;s#6f W,!W g)41 zLDjM FY]a Rzg c|AjGb W5d YMM Pf? sX? ADn Bwy N\\ED W'G' p7? Pn* Nh: XlZ gnL eY8} PL] EC\\< iF+ uq# Qbk` K&*a g>M F&[b bKSl pU[J Bd_ XQ1. Tz;8cn VL+ UEx d#sqa, uPz qxp b#n AhwV endstream endobj obj R>> endobj obj endobj obj stream b,c fvf pWD EoV QUyo L(y dEd YN( endstream endobj obj R>> endobj obj stream h-g n:$@6 F8i EEEe NU} T}[} UW\" G(F aL[ WT|k w+a=B x<( YP0~ CFQA N\"# GY@ H2v Z[8. Q#\\ J3^ DVU K\\a] KN8U lAk oUsh TT5 ZTTS H*. Y\"<; l#KG( eOUh TEL gShbn UP~K qS. v@1$E Ze~ i>nC3 p^U9 V!x s<K J(x iP0 f>h na0 k0r j(- X_9 Haj{ tThK uXcE'c rA? Q(@ Kg4 QAm m%] Mvj Qv?H a]/~:@I tdh X$:\\ fKfFR\"I A|0\\ Z[% pZ{e pUU SNw X,L fYBI o_I G31i Q7- d3y Fwc QOt{y dD: RGVs@ u7V F.y olM zq! Q7^ Bp&w DA, b:P eBK YB` ILA h&V A61 DPA Pss8Y Uvv QU|S s6>u Rs[ a\\p c]z_ hDmm- GG6 SE' T.IC q\\X R>g^ TWXDd; IGUfX j[f tE{}Z TAN` Ygq- m?DUBt Q.- yK\" NM_+y+ k68 q\\s4q< K6>W k.< DM<) WLm O^'G p!Ysg tw=_4 Y~w hTr DCH ezn nmJ QIhSz j[ZY pAz%) xJ,gRP XOn vxP Ial W.] endstream endobj obj R>> endobj obj endobj obj stream PI? eQ07 YYr SX% VHb x$Q saJ endstream endobj obj R>> endobj obj stream xTU M#* Wkg wDqI xTe uHB JK: y5u H&] FK+ a2W m)6 pzfr cL\\ x^1 PYp r5[[ FK0 M.~JB f<!f sxOD zc0{ V.cZ Nc\\\\ hy@y yXA eZ&n dw& LO) L]L c|. sx1 SDs b1w Q<d ayF PF( n=d X&OY KJ_S DqR> O*W dX: R-[6 Q+U jk& Y-f ug5 l*mm RK| Q,F cJUf x~o q*g s}F Kec dz| ec&V mUo bbCCd xTT OgvV) S-m C!Q sk| Ur.u f0Y J\"NQ5 L]K v*& E63 e:\" U~H z|2 BfN qoA_y SUj9 H;U K:\\ OcL S'SwQOQ5 u8u2u9 G*kSEl71 ADA L<ub0\\\" Wmw| RW;^ RG8 J5:j uMt t!3X G{= eST PVQ e>k gIjU tIq IO7l jc&E i>k Pgq#& TT6Nr U)i h~} lhZ egs FE9g Rh/ Cv0 EO8 B/2 Ad> YD~ b\\H c$9 i_` n$o XMnD N>j w<A FL?~^L?n FL?~^L? QX~ ai# tBzjj{; Umo' lo' ai# ai#N ai# dc\\~~{; I%% ai# endstream endobj obj R>> endobj obj endobj obj stream FF! CkX q=0 oT? QVor endstream endobj obj R>> endobj xref trailer R>> startxref",
+        "experience": [
+          {
+            "title": "Senior Domain Consultant",
+            "company": "Global Enterprises Co.",
+            "bullets": []
+          }
+        ],
+        "education": [],
+        "skills": [
+          "Communication",
+          "Analytics",
+          "Strategy"
+        ],
+        "projects": []
+      },
+      "confidenceScore": 70,
+      "warnings": [
+        "No email address detected. Bots will struggle to match matching profile.",
+        "Contact number is missing. Recruitment agencies prefer direct call validation.",
+        "Skills collection is extremely sparse. Injected keyword indexes will be poor."
+      ],
+      "createdAt": "2026-05-28T14:22:41.737Z"
+    }
+  ],
+  "resumeAnalyses": [
+    {
+      "_id": "analysis_zjm5r7ul8",
+      "resumeId": "resume_od6eooiq1",
+      "resumeFileId": "file_tk58xdvtu",
+      "userId": "token_ac_user_str5a7dda",
+      "overallScore": 97,
+      "metrics": {
+        "keywordMatch": 85,
+        "parsability": 100,
+        "formatting": 95,
+        "impactVerbs": 76,
+        "sectionCompleteness": 90,
+        "readability": 85
+      },
+      "warnings": [
+        "Summary section is somewhat generic and lacks a compelling personal elevator pitch.",
+        "Database scaling processes or Cloud deployment logs are under-indexed."
+      ],
+      "scoringBreakdown": {
+        "formattingFeedback": "Professional structure is fully correct. Section headers are easily parseable by standard corporate bots.",
+        "verbFeedback": "Solid use of action verbs but retains several simple words like 'Worked' or 'Collaborated' which can be further elevated.",
+        "completenessFeedback": "All core sections are fully represented. Missing a section for Cloud or DevOps tools."
+      },
+      "contactValidation": {
+        "hasPhone": true,
+        "hasEmail": true,
+        "hasLinkedin": true,
+        "hasAddress": true
+      },
+      "missingSkills": [
+        "Scalable Architecture",
+        "Kubernetes Orchestration",
+        "CI/CD Deployment",
+        "Distributed Database Scaling",
+        "Data Integrity Guarding"
+      ],
+      "actionVerbStrength": "moderate",
+      "measurableMetricsDetected": 3,
+      "summaryFeedback": {
+        "original": "Results-driven Senior Software Engineer with 4+ years of experience architecting highly scalable web applications. Proven track record of optimizing backend API performance by 30% and leading cross-functional, highly collaborative agile core squads.",
+        "improved": "Results-driven Senior Software Engineer with 4+ years of experience architecting highly scalable web applications. Proven track record of optimizing backend API performance by 30% and leading cross-functional, highly collaborative agile core squads.",
+        "justification": "AI summary optimization fully applied to active draft.",
+        "impactLevel": "High"
+      },
+      "bulletImprovements": [
+        {
+          "original": "Worked on backend APIs using Node.js and Express.",
+          "improved": "Architected and optimized RESTful backend API services in Express, driving a 30% latency reduction across core node endpoints.",
+          "diffTags": [
+            "Added Metrics",
+            "Technical Keywords"
+          ],
+          "justification": "Transformed a simple statement of passive tools into a concrete optimization metric showing performance scaling.",
+          "applied": false
+        }
+      ],
+      "createdAt": "2026-05-28T14:22:43.287Z"
+    }
+  ],
+  "jobDescriptions": [],
+  "resumeComparisons": [],
+  "resumeVersions": [],
+  "exportJobs": [],
+  "auditLogs": [
+    {
+      "_id": "audit_x812l71w2",
+      "userId": "user_str5a7dda",
+      "action": "USER_REGISTERED",
+      "resource": "/api/v1/auth/register",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "timestamp": "2026-05-28T14:19:12.923Z"
+    },
+    {
+      "_id": "audit_tw7xlgb9c",
+      "userId": "user_str5a7dda",
+      "action": "USER_LOGIN_SUCCESS",
+      "resource": "/api/v1/auth/login",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "timestamp": "2026-05-28T14:19:12.945Z"
+    },
+    {
+      "_id": "audit_wyfok9c3q",
+      "userId": "user_zn2rtjhtn",
+      "action": "USER_REGISTERED",
+      "resource": "/api/v1/auth/register",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "timestamp": "2026-05-28T14:22:39.464Z"
+    },
+    {
+      "_id": "audit_36f5r6w8n",
+      "userId": "user_zn2rtjhtn",
+      "action": "USER_LOGIN_SUCCESS",
+      "resource": "/api/v1/auth/login",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "timestamp": "2026-05-28T14:22:39.485Z"
+    },
+    {
+      "_id": "audit_thdowena7",
+      "userId": "token_ac_user_str5a7dda",
+      "action": "RESUME_CUSTOM_UPLOAD",
+      "resource": "resume_od6eooiq1",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "timestamp": "2026-05-28T14:22:39.507Z"
+    },
+    {
+      "_id": "audit_qaimhg2hx",
+      "userId": "user_dhreqlcor",
+      "action": "USER_REGISTERED",
+      "resource": "/api/v1/auth/register",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "timestamp": "2026-05-28T14:27:47.645Z"
+    },
+    {
+      "_id": "audit_4nvozd187",
+      "userId": "user_dhreqlcor",
+      "action": "USER_LOGIN_SUCCESS",
+      "resource": "/api/v1/auth/login",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "timestamp": "2026-05-28T14:27:47.666Z"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "notify_tp6sv42lp",
+      "userId": "token_ac_user_str5a7dda",
+      "title": "Resume Analysis Completed",
+      "message": "Your resume \"backend-developer2 - Template 18.pdf\" scored 82/100 in ATS checks. See report details.",
+      "type": "success",
+      "isRead": false,
+      "createdAt": "2026-05-28T14:22:43.293Z"
+    }
+  ],
+  "usageQuotas": [
+    {
+      "_id": "quota_pte9sr0uo",
+      "userId": "user_str5a7dda",
+      "planType": "pro",
+      "currentCredits": 50,
+      "maxCredits": 50,
+      "quotaPeriodStart": "2026-05-28T14:19:12.919Z",
+      "quotaPeriodEnd": "2026-06-27T14:19:12.919Z",
+      "totalAIRequests": 0
+    },
+    {
+      "_id": "quota_ihzaeycf0",
+      "userId": "user_zn2rtjhtn",
+      "planType": "pro",
+      "currentCredits": 50,
+      "maxCredits": 50,
+      "quotaPeriodStart": "2026-05-28T14:22:39.462Z",
+      "quotaPeriodEnd": "2026-06-27T14:22:39.462Z",
+      "totalAIRequests": 0
+    },
+    {
+      "_id": "quota_b7f01dnyd",
+      "userId": "user_dhreqlcor",
+      "planType": "pro",
+      "currentCredits": 50,
+      "maxCredits": 50,
+      "quotaPeriodStart": "2026-05-28T14:27:47.644Z",
+      "quotaPeriodEnd": "2026-06-27T14:27:47.644Z",
+      "totalAIRequests": 0
+    }
+  ]
+}
